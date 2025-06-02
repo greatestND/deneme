@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ana Sayfa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    
+    <nav class="navbar">
+      <div class="logo">🌈 juanBlog</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Ana Sayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">Bloglar</a></li>
+        <div class="hamburger" onclick="toggleMenu()" style="color: bisque;">☰</div>
+      </ul>
+    </nav>
+
+    <h1 class="main-title">Blog Yazıları</h1>
+
+    <div class="blog-list">
+      <div class="blog-item">
+        <h2>🤖 Yapay Zeka Nedir?</h2>
+        <p>Yapay zeka günümüz teknolojisinde önemli bir yere sahiptir...</p>
+        <button onclick="goToDetail(1)">Detayı Gör</button>
+      </div>
+
+      <div class="blog-item">
+        <h2>💻 Web Geliştirme Temelleri</h2>
+        <p>HTML, CSS ve JavaScript ile web dünyasına giriş yapabilirsiniz...</p>
+        <button onclick="goToDetail(2)">Detayı Gör</button>
+      </div>
+
+      <div class="blog-item">
+        <h2>🧠 ChatGPT Beyni Zehirliyor mu?</h2>
+        <p>İnsanlar artık bilgiyi öğrenmekten çok yapay zekaya sormayı tercih ediyor...</p>
+        <button onclick="goToDetail(3)">Detayı Gör</button>
+      </div>
+    </div>
+
+
+    <footer>
+      <p>&copy; 2025 juanBlog. Tüm hakları saklıdır.</p>
+    </footer>
+  </div>
+  
+
+  <script src="../js/home.js"></script>
+</body>
+</html>

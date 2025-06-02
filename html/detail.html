@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Detay</title>
+  <link rel="stylesheet" href="../css/detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🌈 juanBlog</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Anasayfa</a></li>
+      <li><a href="../about.html">Hakkımızda</a></li>
+      <li><a href="../contact.html">Bloglar</a></li>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header id="blog-header"></header>
+    <article id="blog-content"></article>
+
+    <section class="comments">
+      <h3>Yorumlar</h3>
+      <form id="commentForm">
+        <textarea placeholder="Yorumunuzu yazın..." required></textarea>
+        <button type="submit">Gönder</button>
+      </form>
+      <ul id="commentList"></ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 BlogTime. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="../js/detail.js"></script>
+  <script>
+  
+    document.getElementById("mobile-menu").addEventListener("click", () => {
+      document.getElementById("nav-links").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
