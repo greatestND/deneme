@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const password = document.getElementById("password").value;
 
         if (username === "admin" && password === "1234") {
-        window.location.href = "../html/home.html";
+        window.location.href = "home.html";
          } else {
         alert("Hatalı kullanıcı adı veya şifre!");
         }
