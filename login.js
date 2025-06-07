@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     form.addEventListener("submit", function (e) {
         e.preventDefault(); 
-        const username = document.getElementById("username").value;
+        const username = document.getElementById("usernam").value;
         const password = document.getElementById("password").value;
 
         if (username === "admin" && password === "1234") {
